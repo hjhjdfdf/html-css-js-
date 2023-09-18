@@ -1,0 +1,153 @@
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* reset */
+a { text-decoration: none; color: black;}
+ul { list-style-type: none; }
+
+header {
+    width: 100%;
+    border: 1px solid black;
+}
+
+/* util */
+.util { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    padding: 10px; 
+    background-color:antiquewhite; 
+}
+.util .util-menu {
+    display: flex;
+    column-gap: 14px;
+    margin: 0 5px;
+ }
+.util .util-menu li {
+    /* display:inline-block;
+    margin: 0 14px; */
+}
+
+/* menu */
+.menu {
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .menu-left {
+    /* position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+.menu .menu-left a,
+.menu .menu-right a 
+{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background-color:cadetblue;
+    font-size: 30px;
+    color:white;
+
+}
+
+.menu .menu-left a i {}
+
+.menu .menu-center {
+    /* position:absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+.menu .menu-center nav ul {
+    display: flex;
+    align-items: center;
+}
+.menu .menu-center nav ul li {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+}
+
+.menu .menu-center nav ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0 32px;
+    font-weight: bold;
+}
+
+
+.menu .menu-center nav ul li a hover {
+    background-color:cadetblue;
+    color: white;
+
+}
+/* menu - right */
+.menu .menu-right {
+    /* position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); */
+}
+
+
+
+.container {
+    position: relative;
+    width: 1024px;
+    border: 5px dashed orange;
+    margin: auto;
+
+}
+
+.item {
+    border: 2px solid wheat;
+    height: 330px;
+}
+
+img.left { float: left; }
+img.right { float: right; }
+
+footer {
+    background-color: burlywood;
+    min-height: 80px;
+    height: 300px;
+    position: relative;  
+}
+
+footer .copy {
+    position: absolute;  
+    bottom: 20px;         
+    left: 0;            
+    right: 0;           
+    text-align: center;  
+    line-height: normal; 
+    padding: 0px 20px;   
+}
+
+footer .family {
+    float: right;
+    line-height: 80px;
+    min-width: 120px;
+}
+
+.centered-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개의 동일한 너비의 열을 생성 */
+    gap: 30px; /* 행과 열 사이의 간격 */
+    justify-items: center; /* 각 항목을 그들의 셀 내에서 가운데 정렬 */
+    align-items: start; /* 각 항목을 그들의 셀 내에서 상단으로 정렬 */
+    position: absolute; /* 포지션을 절대값으로 지정하여 footer 안에서 위치를 조정할 수 있게 함 */
+    top: 50%; /* 상단 50% 위치에서 시작. 이를 통해 중앙에 배치 */
+    left: 40%; /* 왼쪽 50% 위치에서 시작. 이를 통해 중앙에 배치 */
+    transform: translate(-50%, -100%); /* 위치를 좀 더 위로 옮깁니다. -60%의 값을 조절하여 원하는 위치로 조절 */
+    width: 40%; /* 전체 너비. 필요에 따라 조절 */
+}

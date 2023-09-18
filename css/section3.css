@@ -1,0 +1,65 @@
+.section3 {
+    width: 100%;
+}
+
+.section3 .introduce-one {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 800px;
+    height: 480px;
+   /* border: 1px solid rgb(255, 0, 0); */
+}
+
+.section3 .introduce-one .introduce {
+    width: calc(100%/2 - 50px);
+    height: 300px;
+    /* border: 1px solid black; */
+}
+
+.section3 .introduce-one .introduce img {
+    width: 100%;
+    height: 100%;
+}
+
+.section3 .introduce-one .text-div {
+    position: relative; /* 버튼의 위치를 상대적으로 조정하기 위함 */
+  /*  border: 3px solid rgb(195, 0, 255); */
+    width: calc(100%/2 - 50px);
+    height: 300px;
+    text-align: center;
+}
+
+
+.section3 .introduce-one .text-div h4 {
+    font-size: 30px; 
+    position: relative;
+    top: 50px;
+
+}
+
+.section3 .introduce-one .text-div p {
+    font-size: 20px;
+    position: relative;
+    top: 100px; 
+}
+
+/* 버튼 스타일 */
+
+.section3 .introduce-one .text-div .btn-001 {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 90px;
+    right: 0;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 15px;
+
+}
+
+.section3 .introduce-one .text-div .btn-001:hover {
+    background-color: #0056b3; /* 버튼 호버 시 색상 */
+}
